@@ -24,7 +24,26 @@ console.log("variable nombre=" + nombre);
 
 //mostrar el mensaje en el documento HTML
 document.write("La suma de los dos números es: " + (num1 + num2));
-document.write("<p>La suma de los dos números es: " + (num1 + num2) + "</p>");
-//ejercio 1
+document.write("<p> La suma de los dos números es: " + (num1 + num2) + "</p>");
+
+//Practica - ejercio 1
+
+const num3 = parseInt(prompt('Ingrese un número'))
+
+console.log(num3)
+//Tipo de datos
+//number 10, 5.5
+//string 'hola', "hola"
+//booleano true, false
+//array [1,2,3]
+//object 
+//null
+//undefined
+
+// definicion NaN -> Not a number
+
+// document.write("<br>el resultado de multiplicarlo por 10 es " + num3 * 10);
+alert("el resultado de multiplicarlo por 10 es " + num3 * 10);
+
 
 //ejercicio 2
