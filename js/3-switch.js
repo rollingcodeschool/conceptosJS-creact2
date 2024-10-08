@@ -4,11 +4,9 @@
 //inicializar variables
 let saldo = 1000;
 
-const opcion = parseInt(
-  prompt(
+const opcion = prompt(
     "Seleccione una opción: 1- consultar el saldo, 2- depositar dinero, 3- extraer dinero, 4- salir"
   )
-);
 
 // if (opcion === 1) {
 //   document.write("mostrar el saldo");
@@ -23,10 +21,12 @@ const opcion = parseInt(
 // }
 
 switch (opcion) {
+  case 'uno':
+  case '1':
   case 1:
     document.write("El saldo es $" + saldo);
     break;
-  case 2:
+  case '2':
     //cuanto dinero va a depositar
     const deposito = parseFloat(prompt("Ingrese el monto a depositar"));
     if (deposito > 0) {
@@ -37,7 +37,7 @@ switch (opcion) {
       document.write("Ingresaste una cantidad invalida");
     }
     break;
-  case 3:
+  case '3':
     //preguntar cuanto extraer
     const montoExtraer = parseFloat(prompt("Ingrese el monto a extraer"));
     //preguntar si es un monto valido
@@ -52,14 +52,12 @@ switch (opcion) {
       } else {
         document.write("Saldo insuficiente");
       }
-    }else{
-        document.write("Ingresaste una cantidad invalida");
+    } else {
+      document.write("Ingresaste una cantidad invalida");
     }
-
     break;
-  case 4:
+  case '4':
     document.write("Cerrando el sistema");
-
     break;
   default:
     document.write("Seleccionaste una opcion invalida");
