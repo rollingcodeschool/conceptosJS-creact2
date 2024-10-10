@@ -25,9 +25,24 @@ do{
 }while(condicion logica)
 */
 
-let numero = 1000
+// let numero = 1000
 
-do{
-    document.write(`<p>Número: ${numero}</p>`)
-    numero++ //numero= numero +1;
-}while(numero <= 100)
+// do{
+//     document.write(`<p>Número: ${numero}</p>`)
+//     numero++ //numero= numero +1;
+// }while(numero <= 100)
+
+
+//for si se cumple la condicion ejecuta el codigo
+
+/*
+    for(inicializar una variable; condicion logica ; incrementar o decrementar la variable inicializada){
+        todas las lineas de codigo que quiero ejecutar
+    }
+*/
+
+//quiero crear una cuenta regresiva de 10 a 0
+
+for(let cuenta=-1; cuenta>=0; cuenta--){
+    document.write(`<p>Cuenta regresiva: ${cuenta}</p>`)
+}
