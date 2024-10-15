@@ -15,14 +15,18 @@ y que cada 5 líneas muestre una línea horizontal. (<hr>) Por ejemplo :
 10
 */
 
-for(let i=1; i <=500; i++){
-    document.write(`${i}`)
-    //si el resto de dividir mi numero con 4 me da 0 entonces es un multiplo de 4
-    if(i % 4 === 0){
-        document.write(' (Múltiplo de 4)')
-    }
-    if(i % 9 === 0){
-        document.write(' (Múltiplo de 9)')
-    }
-    document.write(`<br>`)
+for (let i = 1; i <= 500; i++) {
+  document.write(`${i}`);
+  //si el resto de dividir mi numero con 4 me da 0 entonces es un multiplo de 4
+  if (i % 4 === 0) {
+    document.write(" (Múltiplo de 4)");
+  }
+  if (i % 9 === 0) {
+    document.write(" (Múltiplo de 9)");
+  }
+  document.write(`<br>`);
+  if (i % 5 === 0) {
+    document.write(`<hr>`);
+  }
+  // i = 5; i=10; i=15; i=20
 }
