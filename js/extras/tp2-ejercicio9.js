@@ -16,5 +16,13 @@ y que cada 5 líneas muestre una línea horizontal. (<hr>) Por ejemplo :
 */
 
 for(let i=1; i <=500; i++){
-    document.write(`<p>${i}</p>`)
+    document.write(`${i}`)
+    //si el resto de dividir mi numero con 4 me da 0 entonces es un multiplo de 4
+    if(i % 4 === 0){
+        document.write(' (Múltiplo de 4)')
+    }
+    if(i % 9 === 0){
+        document.write(' (Múltiplo de 9)')
+    }
+    document.write(`<br>`)
 }
