@@ -17,12 +17,14 @@ function saludarPersona(nombre, apellido){
 }
 
 //funcion que retornan un valor
-function sumar(numero1, numero2){
-    const total = numero1 + numero2;
-    console.log(total)
-    return total;
-}
+// function sumar(numero1, numero2){
+//     const total = numero1 + numero2;
+//     console.log(total)
+//     return total;
+// }
 
+//arrow functions
+const sumar = (numero1, numero2) => numero1 + numero2;
 
 //usar una funcion
 saludar();
@@ -44,5 +46,8 @@ saludarPersona('Cristian', 'Arrieta');
 const resultado = sumar(7,20);
 document.write(
     `<p>El resultado de la suma es: ${resultado}</p>`
+  );
+document.write(
+    `<p>El resultado de la suma es: ${sumar(5,9)}</p>`
   );
 
