@@ -63,3 +63,36 @@ document.write('</ul>')
 
 
 //borrar elementos en el array
+
+//borrar al principio
+peliculas.shift()
+document.write(`<h2>Borramos el primer elemento del array, peliculas: ${peliculas.length}</h2>`)
+document.write('<ul>')
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write('</ul>')
+
+//borrar al final
+peliculas.pop()
+document.write(`<h2>Borramos el ultimo elemento del array, peliculas: ${peliculas.length}</h2>`)
+document.write('<ul>')
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write('</ul>')
+
+//borrar en el medio del array
+peliculas.splice(4,1) //aqui borro una peli, la que esta en la posicion 4
+// peliculas.splice(4,2)aqui borro dos pelis, la que esta en la posicion 4
+// peliculas.splice(4) aqui borro desde la posicion 4 todos los elementos del array
+
+document.write(`<h2>Borramos el elemento de la posicion 4 del array, peliculas: ${peliculas.length}</h2>`)
+document.write('<ul>')
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write('</ul>')
+
+
+document.write(`<p>Elemento 20 del array de peliculas: ${peliculas[20]}</p>`)
