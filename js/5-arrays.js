@@ -4,6 +4,16 @@ const precios = [];
 //declarar un array con datos
 const peliculas = ['shrek 1',true, 2024, 'shrek 2', 'Titanic', '5.5', 'Titanes del pacifico']
 
+//agrego una funcion
+function mostrarPeliculas (titulo){
+    document.write(`<h2>${titulo}</h2>`)
+    document.write('<ul>')
+    for(let i=0; i < peliculas.length; i++){
+        document.write(`<li>${peliculas[i]}</li>`)
+    }
+    document.write('</ul>')
+}
+
 //mostrar un array en el documento html
 document.write(precios +'<br>')
 document.write(peliculas +'<br>')
@@ -18,22 +28,12 @@ document.write(`<p>Cantidad de elementos en el array de peliculas: ${peliculas.l
 document.write(`<p>Mostrar un elemento del array: ${peliculas[4]}</p>`)
 
 //mostrar un array completo
-document.write(`<h2>Mostrar elementos del array de peliculas</h2>`)
-document.write('<ul>')
-for(let i=0; i < peliculas.length; i++){
-    document.write(`<li>${peliculas[i]}</li>`)
-}
-document.write('</ul>')
+mostrarPeliculas('Mostrar elementos del array de peliculas');
 
 //agregar elementos en el array
 //agregar un elemento al principio del array
 peliculas.unshift('Interestelar','Los increibles')
-document.write(`<h2>Agregamos 2 elementos al principio del array, peliculas: ${peliculas.length}</h2>`)
-document.write('<ul>')
-for(let i=0; i < peliculas.length; i++){
-    document.write(`<li>${peliculas[i]}</li>`)
-}
-document.write('</ul>')
+mostrarPeliculas(`Agregamos 2 elementos al principio del array, peliculas: ${peliculas.length}`)
 
 //agregar un elemento al final del array
 peliculas.push('furia de titanes')
