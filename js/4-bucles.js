@@ -25,12 +25,12 @@ do{
 }while(condicion logica)
 */
 
-// let numero = 1000
 
-// do{
-//     document.write(`<p>Número: ${numero}</p>`)
-//     numero++ //numero= numero +1;
-// }while(numero <= 100)
+let numero = 1
+do{
+    document.write(`<p>Número: ${numero}</p>`)
+    numero++ //numero= numero +1;
+}while(numero <= 100)
 
 
 //for si se cumple la condicion ejecuta el codigo
