@@ -96,3 +96,24 @@ document.write('</ul>')
 
 
 document.write(`<p>Elemento 20 del array de peliculas: ${peliculas[20]}</p>`)
+
+//quiero encontrar un elemento en el array 'Titanic'
+//quiero encontrar un elemento en el array 'enc'
+const encontreTitanic = peliculas.find((itemPelicula)=> itemPelicula === 'Titanic' )
+const encontreVengadores = peliculas.find((itemPelicula)=> itemPelicula === 'Vengadores: End game' )
+console.log(encontreTitanic)
+console.log(encontreVengadores)
+
+//buscamos la posicion de las peliculas anteriores
+const posicionPeliTitanic = peliculas.findIndex((item)=> item === 'Titanic')
+const posicionPeliVengadores = peliculas.findIndex((item)=> item === 'Vengadores: End game')
+console.log(posicionPeliTitanic, posicionPeliVengadores)
+
+document.write(`<p>Peli encontrada ${encontreTitanic}, esta en la posicion ${posicionPeliTitanic} del array </p>`)
+document.write(`<p>Peli encontrada ${encontreVengadores}, esta en la posicion ${posicionPeliVengadores} del array </p>`)
+
+
+//si quiero filtrar elemntos del array 
+const sagaSherk = peliculas.filter((pelicula)=> pelicula.includes('shrek'))
+console.log(peliculas[1].includes('shrek'))
+console.log(sagaSherk)
