@@ -14,6 +14,14 @@ function mostrarPeliculas (titulo){
     document.write('</ul>')
 }
 
+const mostrarArreglos = (arreglo, titulo)=>{
+    document.write(`<h2>${titulo}</h2>`)
+    document.write('<ol>')
+    //map
+    arreglo.map((item)=> document.write(`<li>${item}</li>`))
+    document.write('</ol>')
+}
+
 //mostrar un array en el documento html
 document.write(precios +'<br>')
 document.write(peliculas +'<br>')
@@ -114,6 +122,10 @@ document.write(`<p>Peli encontrada ${encontreVengadores}, esta en la posicion ${
 
 
 //si quiero filtrar elemntos del array 
-const sagaSherk = peliculas.filter((pelicula)=> pelicula.includes('shrek'))
+peliculas.push('Shrek 3', 'Shrek 4')
+const sagaSherk = peliculas.filter((pelicula)=> pelicula.toLowerCase().includes('shrek'))
 console.log(peliculas[1].includes('shrek'))
 console.log(sagaSherk)
+
+mostrarPeliculas('Agregamos Sherk 3 y 4');
+mostrarArreglos(sagaSherk,'Peliculas de Shrek');
