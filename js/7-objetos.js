@@ -46,3 +46,6 @@ console.log(cancion)
 //usar metodos del objeto cancion
 cancion.reproducir();
 cancion.stop();
+
+console.log(cancion.hasOwnProperty('anioLanzamiento'))
+console.log(cancion.hasOwnProperty('album'))
