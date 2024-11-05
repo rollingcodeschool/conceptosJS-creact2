@@ -93,7 +93,7 @@ class Alumno extends Persona {
             <li>DNI: ${this.dni}</li>
             <li>Comision:${this.getComision}</li>
             <li>Notas: ${this.notas}</li>
-            <li>Promedio: ${this.promedio}</li>
+            <li>Promedio: ${this.obtenerPromedio()}</li>
             </ul>`)
     }
 }
@@ -131,3 +131,5 @@ fabricio.notas.push(5,4,6)
 console.log(fabricio)
 
 document.write(`<p>Alumno : ${fabricio.getNombre}, ${fabricio.apellido} - promedio actual ${fabricio.obtenerPromedio()}</p>`)
+
+fabricio.mostrarDatos();
